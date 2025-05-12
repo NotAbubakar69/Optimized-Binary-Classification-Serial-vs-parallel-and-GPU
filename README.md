@@ -8,7 +8,7 @@ This project implements and benchmarks a binary classification pipeline using tr
 
 * Muhammad Qasim (22I-1994)
 * Ayaan Khan (22I-2066)
-* Muhammad AbuBakAr Nadeem (22I-2003)
+* Muhammad Abubakar Nadeem (22I-2003)
 
 ## Key Highlights
 
