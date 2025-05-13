@@ -4,11 +4,8 @@
 
 This project implements and benchmarks a binary classification pipeline using tree-based (XGBoost) and deep learning (PyTorch) models under various compute configurations: serial CPU, parallel CPU, and GPU. The focus was to optimize training time without sacrificing classification accuracy. The project achieved up to *71.8% reduction in processing time*, maintaining accuracy around \~50–52%.
 
-## Team Members
-
-* Muhammad Qasim (22I-1994)
-* Ayaan Khan (22I-2066)
-* Muhammad Abubakar Nadeem (22I-2003)
+## WorkFlow
+  <img src="https://github.com/user-attachments/assets/b281b535-c3ff-4152-a699-899b345a0b30" width="200">
 
 ## Key Highlights
 
@@ -41,6 +38,12 @@ This project implements and benchmarks a binary classification pipeline using tr
 3. *Normalization*: Quantile transformation on numerical features
 4. *Imbalance Handling*: SMOTE on training set
 5. *Final Shape*: (Pre-SMOTE) 30,750 samples → (Post-SMOTE) 36,990 samples
+<img src="https://github.com/user-attachments/assets/508de6a5-fc15-426e-9ef1-c91bc0480c90" width="700">
+<img src="https://github.com/user-attachments/assets/4eef7070-44dd-4396-a565-d4c3549df7ef" width="700">
+<img src="https://github.com/user-attachments/assets/6c56455d-ddb5-46b3-baf2-58075ef59ade" width="700">
+<img src="https://github.com/user-attachments/assets/67bda1fb-4533-49e3-aba2-e266c5f3630f" width="700">
+<img src="https://github.com/user-attachments/assets/fc58739a-b5ca-4dd2-abca-338dd92bd9b2" width="700">
+<img src="https://github.com/user-attachments/assets/d158d354-1c46-4d23-acf2-2a9bdd2eca12" width="700">
 
 ## Model Implementations
 
@@ -57,16 +60,10 @@ This project implements and benchmarks a binary classification pipeline using tr
 * Loss: Binary Cross Entropy
 * AMP: Enabled for GPU
 * Batch Size: 64 (CPU), 1024 (GPU)
+<img src="https://github.com/user-attachments/assets/b58b4b8f-bc0c-4adc-a52e-c5d2aedb653e" width="700">
 
 ## Results Summary
-
-| Model            | Accuracy | F1 Score   | Time (s) | Speedup vs Serial |
-| ---------------- | -------- | ---------- | -------- | ----------------- |
-| XGBoost Serial   | 0.5245   | 0.4327     | 0.61     | —                 |
-| XGBoost Parallel | 0.5245   | 0.4327     | 0.38     | 37.7%             |
-| XGBoost GPU      | 0.5197   | 0.4321     | 0.57     | 6.55%             |
-| PyTorch CPU      | 0.5084   | 0.4513     | 119.37   | —                 |
-| PyTorch GPU      | 0.4898   | *0.4592* | 37.34    | 71.8%             |
+<img src="https://github.com/user-attachments/assets/e273b39d-8e17-4c3f-9e54-a91429dc646a" width="700">
 
 ## Observations
 
@@ -96,3 +93,9 @@ This project implements and benchmarks a binary classification pipeline using tr
 
 * Chen, T. & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. ACM SIGKDD.
 * Paszke, A. et al. (2019). PyTorch: An Imperative Style, High-Performance Deep Learning Library. NeurIPS.
+
+## Team Members
+
+* Muhammad Qasim
+* Ayaan Khan
+* Muhammad Abubakar Nadeem
